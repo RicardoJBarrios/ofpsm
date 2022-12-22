@@ -1263,6 +1263,18 @@
     "@commitlint/types" "^17.0.0"
     ajv "^8.11.0"
 
+"@commitlint/cz-commitlint@~17.3.0":
+  version "17.3.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/cz-commitlint/-/cz-commitlint-17.3.0.tgz#96228dbcd9fff2100d8e1b12de7961bb68362cd6"
+  integrity sha512-kaHa6vzEriGQZgnBj08TTc92m8KUAd0LbXhzUbfuoJzH5b9TnfsQI7Him7oXWe4PzXBVEMREcAdqIQHzRUilfQ==
+  dependencies:
+    "@commitlint/ensure" "^17.3.0"
+    "@commitlint/load" "^17.3.0"
+    "@commitlint/types" "^17.0.0"
+    chalk "^4.1.0"
+    lodash.isplainobject "^4.0.6"
+    word-wrap "^1.2.3"
+
 "@commitlint/ensure@^17.3.0":
   version "17.3.0"
   resolved "https://registry.yarnpkg.com/@commitlint/ensure/-/ensure-17.3.0.tgz#d7bb60291a254152b468ccb2be8c0dc79667247e"
@@ -4066,7 +4078,7 @@ commander@^7.2.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
-commitizen@^4.0.3, commitizen@~4.2.0:
+commitizen@^4.0.3, commitizen@^4.2.6:
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.2.6.tgz#c35af39e1cb5fc2de88511df802da4344dc3ca80"
   integrity sha512-RyTM+EiD9GO01DJUn9MRRAet3XUHGfoUZoksLfr+1ym1Xt2q5EYJs9Fg2BtKSb5Mo53i0BtMBmWMHQXVlZ/L9w==
@@ -4528,7 +4540,7 @@ cypress@~11.2.0:
     untildify "^4.0.0"
     yauzl "^2.10.0"
 
-cz-conventional-changelog@3.3.0, cz-conventional-changelog@~3.3.0:
+cz-conventional-changelog@3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/cz-conventional-changelog/-/cz-conventional-changelog-3.3.0.tgz#9246947c90404149b3fe2cf7ee91acad3b7d22d2"
   integrity sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==
@@ -6510,6 +6522,27 @@ inquirer@8.2.4:
   version "8.2.4"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.4.tgz#ddbfe86ca2f67649a67daa6f1051c128f684f0b4"
   integrity sha512-nn4F01dxU8VeKfq192IjLsxu0/OmMZ4Lg3xKAns148rCaXP6ntAoEkVYZThWjwON8AlzdZZi6oqnhNbxUG9hVg==
+  dependencies:
+    ansi-escapes "^4.2.1"
+    chalk "^4.1.1"
+    cli-cursor "^3.1.0"
+    cli-width "^3.0.0"
+    external-editor "^3.0.3"
+    figures "^3.0.0"
+    lodash "^4.17.21"
+    mute-stream "0.0.8"
+    ora "^5.4.1"
+    run-async "^2.4.0"
+    rxjs "^7.5.5"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+    through "^2.3.6"
+    wrap-ansi "^7.0.0"
+
+inquirer@~8.2.0:
+  version "8.2.5"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.5.tgz#d8654a7542c35a9b9e069d27e2df4858784d54f8"
+  integrity sha512-QAgPDQMEgrDssk1XiwwHoOGYF9BAbUcc1+j+FhEvaOt8/cKRqyLn0U5qA6F74fGhTMGxf92pOvPBeh29jQJDTQ==
   dependencies:
     ansi-escapes "^4.2.1"
     chalk "^4.1.1"
