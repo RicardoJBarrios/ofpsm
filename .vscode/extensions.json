@@ -3,6 +3,9 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "sonarsource.sonarlint-vscode",
+    "rbbit.typescript-hero",
+    "kisstkondoros.vscode-codemetrics"
   ]
 }
