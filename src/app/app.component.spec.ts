@@ -1,32 +1,23 @@
-import { TestBed } from '@angular/core/testing';
+import { createComponentFactory, Spectator } from '@ngneat/spectator/jest';
+
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [AppComponent, NxWelcomeComponent],
-    }).compileComponents();
+  let spectator: Spectator<AppComponent>;
+  const createComponent = createComponentFactory({ component: AppComponent, declarations: [NxWelcomeComponent] });
+
+  beforeEach(() => (spectator = createComponent()));
+
+  it('creates the app', () => {
+    expect(spectator.component).toBeInstanceOf(AppComponent);
   });
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+  it(`has the title 'ofpsm'`, () => {
+    expect(spectator.component.title).toEqual('ofpsm');
   });
 
-  it(`should have as title 'ofpsm'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('ofpsm');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome ofpsm'
-    );
+  it('render the title', () => {
+    expect(spectator.query('h1')).toHaveText('Welcome ofpsm');
   });
 });
