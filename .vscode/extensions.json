@@ -6,6 +6,7 @@
     "dbaeumer.vscode-eslint",
     "sonarsource.sonarlint-vscode",
     "rbbit.typescript-hero",
-    "kisstkondoros.vscode-codemetrics"
+    "kisstkondoros.vscode-codemetrics",
+    "alexkrechik.cucumberautocomplete"
   ]
 }
