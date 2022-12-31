@@ -4,6 +4,7 @@
 dist
 tmp
 /out-tsc
+src/assets/firebase-env.json
 
 # dependencies
 node_modules
