@@ -2133,7 +2133,7 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@kuoki/environment-angular@^1.0.3":
+"@kuoki/environment-angular@~1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@kuoki/environment-angular/-/environment-angular-1.0.3.tgz#031b4c11b1dc120de46718052fa4619d9aad1f97"
   integrity sha512-scNOkX8lyV/i1Fi+gtwo9hI+emjySPX4b6YYWfKT6DLB3SvufIikIEoxzolcQalNdCMk4OfyXFu3rQs5ucoaMg==
@@ -2142,10 +2142,10 @@
     reflect-metadata ">=0.1.2"
     tslib "^2.3.0"
 
-"@kuoki/environment@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@kuoki/environment/-/environment-1.3.1.tgz#5bc79f5e5e8293734c6bc0a52fe2130acb39d76c"
-  integrity sha512-HBhe4ouX/RVSwsJxj/sTFV7KHjOFeRx7Ca4s1sZae5jFeZfIi54p5uMSheZ53vDn05/0epp8S9E2GMlIStUrwA==
+"@kuoki/environment@~1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@kuoki/environment/-/environment-1.4.0.tgz#7f1d47fd31d1dfb481d7c4d41851f250f1b05dd7"
+  integrity sha512-3QVY8AGsnZ+AR422UQHWS2Po//6GikfYuesjIhDou9ZAGO5C/2aOssPSJ3AqQkf+Jj4A/QXj7gidy1/WblWBoA==
   dependencies:
     lodash-es ">=4.0.0"
 
@@ -8210,7 +8210,7 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-lodash-es@>=4.0.0, lodash-es@^4.17.21:
+lodash-es@>=4.0.0, lodash-es@~4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
