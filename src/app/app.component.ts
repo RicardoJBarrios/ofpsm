@@ -1,8 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { EnvironmentQuery } from '@kuoki/environment';
-import { Observable } from 'rxjs';
-
-import { FirebaseEnv } from './environment/firebase-env.source';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'ofpsm-root',
@@ -11,8 +7,5 @@ import { FirebaseEnv } from './environment/firebase-env.source';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  private readonly env: EnvironmentQuery = inject(EnvironmentQuery);
-
   readonly title = 'ofpsm';
-  readonly firebaseEnv$: Observable<FirebaseEnv | undefined> = this.env.get$('firebase');
 }
