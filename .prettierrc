@@ -1,5 +1,9 @@
 {
   "singleQuote": true,
   "printWidth": 120,
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "pluginSearchDirs": false,
+  "plugins": ["prettier-plugin-jsdoc", "prettier-plugin-organize-attributes", "prettier-plugin-tailwindcss"],
+  "attributeGroups": ["$CODE_GUIDE"],
+  "tailwindConfig": "./tailwind.config.js"
 }
