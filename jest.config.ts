@@ -10,6 +10,8 @@ export default {
     }
   },
   coverageDirectory: './coverage/ofpsm',
+  coverageReporters: ['text', 'html'],
+  moduleNameMapper: { '^lodash-es$': 'lodash' },
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular'
   },

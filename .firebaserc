@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ofpsm0": {
+      "hosting": {
+        "ofpsm": [
+          "ofpsm0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ofpsm0"
+  }
+}

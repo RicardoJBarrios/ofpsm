@@ -76,7 +76,18 @@
       "outputs": ["{workspaceRoot}/coverage/{projectName}"],
       "options": {
         "jestConfig": "jest.config.ts",
-        "passWithNoTests": true
+        "passWithNoTests": true,
+        "codeCoverage": true
+      }
+    },
+    "deploy": {
+      "executor": "@angular/fire:deploy",
+      "options": {
+        "prerender": false,
+        "ssr": false,
+        "browserTarget": "ofpsm:build:production",
+        "firebaseProject": "ofpsm0",
+        "firebaseHostingSite": "ofpsm0"
       }
     }
   },

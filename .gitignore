@@ -4,6 +4,7 @@
 dist
 tmp
 /out-tsc
+src/assets/*-env.json
 
 # dependencies
 node_modules
@@ -39,3 +40,8 @@ testem.log
 Thumbs.db
 
 .angular
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json

@@ -1,11 +1,10 @@
 import { createComponentFactory, Spectator } from '@ngneat/spectator/jest';
 
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
 describe('AppComponent', () => {
   let spectator: Spectator<AppComponent>;
-  const createComponent = createComponentFactory({ component: AppComponent, declarations: [NxWelcomeComponent] });
+  const createComponent = createComponentFactory(AppComponent);
 
   beforeEach(() => (spectator = createComponent()));
 
